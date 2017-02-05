@@ -23,7 +23,7 @@ if [ -z "$IMPRESSPAGES_DB_PASSWORD" ]; then
 	exit 1
 fi
 
-if ! [ -e index.php -a -e Lp/Application.php ]; then
+if ! [ -e index.php -a -e Ip/Application.php ]; then
 	echo >&2 "ImpressPages not found in $(pwd) - copying now..."
 	if [ "$(ls -A)" ]; then
 		echo >&2 "WARNING: $(pwd) is not empty - press Ctrl+C now if this is an error!"
